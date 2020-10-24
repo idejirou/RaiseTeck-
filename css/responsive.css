@@ -40,3 +40,247 @@
     }
 
 }
+@media screen and (max-width: 1200px){
+    .nav-unshown {
+        display:none;
+      }
+  
+      #nav-drawer {
+        margin: 10px 5px;
+      }
+      
+      #nav-open {
+        display: inline-block;
+        width: 30px;
+        height: 22px;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      
+      #nav-open span {
+        position: absolute;
+        height: 1px;/*線の太さ*/
+        width: 23px;/*長さ*/
+        background: #2498b3;
+        display: block;
+        content: '';
+      }
+  
+      #nav-open span:before{
+        position: absolute;
+        height: 2px;/*線の太さ*/
+        width: 23px;/*長さ*/
+        background: #2498b3;
+        display: block;
+        content: '';
+        bottom: -9px;
+        transition: .3s;
+      }
+  
+      #nav-open span:after {
+        position: absolute;
+        height: 2.5px;/*線の太さ*/
+        width: 23px;/*長さ*/
+        background: #2498b3;
+        display: block;
+        content: '';
+        bottom: -18px;
+        transition: .3s;
+      }
+  
+      .header-right {
+        background-color:#fff;         
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        display: none;
+      }
+  
+       #nav-drawer:hover .header-right{
+       display: block;
+      } 
+  
+      .header-right:hover .header-right{
+        display: block;
+      } 
+  
+     #nav-drawer:hover {
+       background-color: #2498b3;
+       width: 50px;
+       margin: 0;
+     } 
+  
+     #nav-drawer:hover #nav-open span{
+        position: absolute;
+        height: 0px;/*線の太さ*/
+        width: 0px;/*長さ*/
+        background: #2498b3;
+        display: block;
+        content: '';
+      }
+  
+      #nav-drawer:hover #nav-open span::before{
+        position: absolute;
+        height: 2px;/*線の太さ*/
+        width: 23px;/*長さ*/
+        background: #fff;
+        display: block;
+        content: '';
+        bottom: -25px;
+        right: -37px;
+        transform: rotate(45deg);
+      }
+  
+      #nav-drawer:hover #nav-open span:after {
+        position: absolute;
+        height: 2.5px;/*線の太さ*/
+        width: 23px;/*長さ*/
+        background: #fff;
+        display: block;
+        content: '';
+        bottom: -25px;
+        right: -37px;
+        transform: rotate(135deg);
+      }
+  
+      .nav-box {
+        position: relative;    
+      }
+  
+      .nav-box1::before, .m1::after {    
+        position: absolute;
+        top: 22px;
+        right: 2px;
+        content: '';
+        height: 1.5px;
+        width: 22px;
+        background: #131d34;
+        display: block;
+        transform: translateX(-50%);
+      }
+  
+      .m1::after {    
+      top: 22px;
+      right: 13px;
+      transform: rotate(90deg);
+      }
+  
+      .m1:hover::after {
+       display: none;
+      }
+  
+      .nav-box3::before, .m3::after {
+        position: absolute;
+        top: 22px;
+        right: 2px;
+        content: '';
+        height: 1.5px;
+        width: 22px;
+        background: #131d34;
+        display: block;
+        transform: translateX(-50%);
+      }
+  
+      .m3::after {
+      top: 22px;
+      right: 13px;
+      transform: rotate(90deg);
+      }
+  
+      .m3:hover::after {
+       display: none;
+      }
+  
+      .nav-box5::before, .m5::after {
+        position: absolute;
+        top: 22px;
+        right: 2px;
+        content: '';
+        height: 1.5px;
+        width: 22px;
+        background: #131d34;
+        display: block;
+        transform: translateX(-50%);
+      }
+  
+      .m5::after {
+      top: 22px;
+      right: 13px;
+      transform: rotate(90deg);
+      }
+  
+      .m5:hover::after {
+       display: none;
+      }
+  
+      .nav-box a {
+        color: #131d34;
+        height: 45.6px;
+        font-size: 16px;
+        display: block;
+        align-items: center;
+        padding: 10px;
+       
+      }
+      .header-right a:hover {
+        background-color: #e9f8fb;
+      }
+  
+      .sub-menu a {
+        font-weight: normal;
+        padding: 10px 25px;
+      }
+  
+      .m2 {
+        border: 1px;
+        height: 0;
+        opacity: 0;
+        transition: .3s;
+        visibility: hidden;
+      }
+  
+      .m1:hover .m2 {
+        height: 40px;
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .m4 {
+        border: 1px;
+        height: 0;
+        opacity: 0;
+        transition: .3s;
+        visibility: hidden;
+      }
+  
+      .m3:hover .m4 {
+        height: 40px;
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .m6 {
+        border: 0.5px;
+        height: 0;
+        opacity: 0;
+        transition: .3s;
+        visibility: hidden;
+      }
+  
+      .m5:hover .m6 {
+        height: 40px;
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .form {
+        display: none;
+      }
+  
+      article {
+        padding-top: 50px;
+      }
+  } 
+  
+}
